@@ -1,1 +1,1 @@
-  https://Rusveld.github.io/rsschool-cv/cv
+  https://Rusveld.github.io/rsschool-cv/
