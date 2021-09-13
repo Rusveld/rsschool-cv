@@ -3,7 +3,7 @@
     margin: 3% 16% 3% 16%;        
     width: 68vw;
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 40% 60%;
     grid-auto-rows: auto 10vw;
     grid-template-areas: 
     "lp rp"
@@ -70,6 +70,13 @@ a:hover{
     animation-fill-mode: forwards;
 }
 
+li:hover{
+    animation-name: color;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
 @keyframes color {
     to{
         color: red;
@@ -108,10 +115,13 @@ footer{
     background-color: #3e1c9275;
     display: flex;
     border: 0.2mm solid black;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .right-plate{
     grid-area: rp;
+
 }
 
 .right-h{
@@ -119,6 +129,7 @@ footer{
     color: white;
     margin-left: 10%;
     margin-right: 10%;
+    max-width: 80%;
 }
 
 .right-text{
@@ -131,9 +142,38 @@ footer{
     background-color: rgba(79, 71, 82, 0.205);
     margin-left: 2.5vw;
     margin-right: 2.5vw;
+
 }
 
 .right-courses{
     margin-left: 10%;
 }
 
+#b2{
+    font-size: 2.2vw;
+}
+
+.footer-img{
+    height: 80%;
+    margin-top: 1vw;
+    margin-left: 1vw;
+    width: 10vw;
+}
+
+div.footer-text{
+    align-items: center;
+    font-size: 3vw;
+    margin-top: 3vw;
+}
+
+p.footer-text{
+    font-size: 3vw;
+}
+
+.second-footer-text{
+    padding-bottom: 6vw;
+}
+
+.javascript{
+    font-size: 1vw;
+}
