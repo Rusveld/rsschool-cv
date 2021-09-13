@@ -1,0 +1,179 @@
+
+.container{
+    margin: 3% 16% 3% 16%;        
+    width: 68vw;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-auto-rows: auto 10vw;
+    grid-template-areas: 
+    "lp rp"
+    "ft ft";
+    border: 0.2vw solid #53385c93;
+    box-shadow: 19px 8px 50px #53385c93;
+}
+
+body{
+    display: flex;
+    margin: 0;
+}
+
+.left-plate {
+    grid-area: lp;
+    background-color: #62568375;
+    animation-name: back;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes back {
+    from{
+        background-color: #62568375;
+    }
+
+    to{
+        background-color: #3e1c9275;
+    }
+}
+
+.myphoto {
+    border-radius: 50%;
+    width: 60%;
+    border: 0.2vw solid #3b553775;
+    margin: 10% 20% 5% 20%;
+}
+
+h1{
+    text-align: center;
+    font-size: 3vw;
+}
+
+h2{
+    text-align: center;
+    font-size: 2.2vw;
+}
+
+li{
+
+    list-style: none;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    animation-name: color;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+li:hover{
+    animation-name: color;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes color {
+    to{
+        color: red;
+        text-shadow: 5px red;
+    }
+}
+
+li img {
+    width: 2.2vw;
+    margin-left: 0.5vw;
+}
+
+p {
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.5vw;
+    display: inline;
+    vertical-align: middle;
+    font-weight: 500;
+    padding-bottom: 1.5vw;
+}
+
+h3{
+    margin-left: 0.5vw;
+    font-size: 2.5vw;
+    margin-bottom: 1vw;
+}
+
+.rectangles{
+    width: 90%;
+    margin: 5% 5% 5% 5%;
+}
+
+footer{
+    grid-area: ft;
+    background-color: #3e1c9275;
+    display: flex;
+    border: 0.2mm solid black;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.right-plate{
+    grid-area: rp;
+
+}
+
+.right-h{
+    background-color: rgba(59, 4, 73, 0.733);
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 80%;
+}
+
+.right-text{
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+.right-code{
+    background-color: rgba(79, 71, 82, 0.205);
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+
+}
+
+.right-courses{
+    margin-left: 10%;
+}
+
+#b2{
+    font-size: 2.2vw;
+}
+
+.footer-img{
+    height: 80%;
+    margin-top: 1vw;
+    margin-left: 1vw;
+    width: 10vw;
+}
+
+div.footer-text{
+    align-items: center;
+    font-size: 3vw;
+    margin-top: 3vw;
+}
+
+p.footer-text{
+    font-size: 3vw;
+}
+
+.second-footer-text{
+    padding-bottom: 6vw;
+}
+
+.javascript{
+    font-size: 1vw;
+}
